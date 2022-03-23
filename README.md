@@ -1,8 +1,8 @@
-# autosysmon
+# automon
 
 ## Wrapper for Sysmon
 
-Quickly install Sysmon with specific config!
+Quickly (un)install Sysmon with specific config.
 
 ## Hardcoded Configs
 ```
@@ -12,7 +12,16 @@ Available Sysmon configs:
 [2] https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml
 ```
 
+### Example:
+
+* `automon --listconfigs` --> Lists all known Sysmon config URLs (use `configURL` for other URL or create a issue)
+* `automon --config 0` --> fresh Sysmon installation with config [0]
+* `automon --config 0 --force` --> uninstalls old Sysmon and installs new Sysmon with config [0]
+* `automon --sysmondownload` --> downloads and unzips Sysmon
+
 ## Usage
+
+Downloaded files are written to current working directory!
 
 ```
   -arch string
@@ -24,12 +33,11 @@ Available Sysmon configs:
   -force
         Uninstalls Sysmon before installing
   -listconfigs
-        Lists known Sysmon configs
+        Lists hardcoded Sysmon config URLs
   -sysmonURL string
-        URL to download Sysmon (default "https://download.sysinternals.com/files/Sysmon.zip")
+        URL to download Sysmon zip (default "https://download.sysinternals.com/files/Sysmon.zip")
   -sysmondownload
         Just downloads Sysmon
   -uninstall
         Uninstall Sysmon
-
 ```

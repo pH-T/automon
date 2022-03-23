@@ -33,12 +33,12 @@ var ForceInstallFlag bool
 var ConfigURLFlag string
 
 func main() {
-	flag.BoolVar(&ListConfigsFlag, "listconfigs", false, "Lists known Sysmon configs")
+	flag.BoolVar(&ListConfigsFlag, "listconfigs", false, "Lists hardcoded Sysmon config URLs")
 	flag.BoolVar(&ForceInstallFlag, "force", false, "Uninstalls Sysmon before installing")
 	flag.BoolVar(&SysmonDownloadOnlyFlag, "sysmondownload", false, "Just downloads Sysmon")
 	flag.BoolVar(&UninstallSysmonFlag, "uninstall", false, "Uninstall Sysmon")
 	flag.IntVar(&UseConfigIndexFlag, "config", -1, "Which config should be used")
-	flag.StringVar(&SysmonURLFlag, "sysmonURL", "https://download.sysinternals.com/files/Sysmon.zip", "URL to download Sysmon")
+	flag.StringVar(&SysmonURLFlag, "sysmonURL", "https://download.sysinternals.com/files/Sysmon.zip", "URL to download Sysmon zip")
 	flag.StringVar(&SysmonArchFlag, "arch", "64", "Which Sysmon version to use: 64 or 32")
 	flag.StringVar(&ConfigURLFlag, "configURL", "", "URL to download config")
 	flag.Parse()
