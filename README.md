@@ -1,8 +1,6 @@
 # automon
 
-## Wrapper for Sysmon
-
-Quickly (un)install Sysmon with specific config.
+Sysmon installation wrapper - quickly (un)install Sysmon with specific config.
 
 ## Hardcoded Configs
 ```
@@ -14,7 +12,7 @@ Available Sysmon configs:
 
 ### Example:
 
-* `automon --listconfigs` --> Lists all known Sysmon config URLs (use `configURL` for other URL or create a issue)
+* `automon --listconfigs` --> lists all known Sysmon config URLs (use `configURL` for other URL or create a issue)
 * `automon --config 0` --> fresh Sysmon installation with config [0]
 * `automon --config 0 --force` --> uninstalls old Sysmon and installs new Sysmon with config [0]
 * `automon --sysmondownload` --> downloads and unzips Sysmon
@@ -41,3 +39,7 @@ Downloaded files are written to current working directory!
   -uninstall
         Uninstall Sysmon
 ```
+
+## Build
+
+`make win`
