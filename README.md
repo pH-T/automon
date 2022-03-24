@@ -8,6 +8,8 @@ Available Sysmon configs:
 [0] https://raw.githubusercontent.com/NextronSystems/aurora-helpers/master/sysmon-config/aurora-sysmon-config.xml
 [1] https://raw.githubusercontent.com/Neo23x0/sysmon-config/master/sysmonconfig-export.xml
 [2] https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml
+[3] https://raw.githubusercontent.com/NextronSystems/evtx-baseline/master/sysmon-intense.xml
+[4] https://raw.githubusercontent.com/OTRF/Blacksmith/master/resources/configs/sysmon/sysmon.xml
 ```
 
 ### Example:
@@ -43,3 +45,7 @@ Downloaded files are written to current working directory!
 ## Build
 
 `make win`
+
+## Todos
+
+* Cleanup flag

@@ -17,6 +17,8 @@ var SysmonConfigs []string = []string{
 	"https://raw.githubusercontent.com/NextronSystems/aurora-helpers/master/sysmon-config/aurora-sysmon-config.xml",
 	"https://raw.githubusercontent.com/Neo23x0/sysmon-config/master/sysmonconfig-export.xml",
 	"https://raw.githubusercontent.com/SwiftOnSecurity/sysmon-config/master/sysmonconfig-export.xml",
+	"https://raw.githubusercontent.com/NextronSystems/evtx-baseline/master/sysmon-intense.xml",
+	"https://raw.githubusercontent.com/OTRF/Blacksmith/master/resources/configs/sysmon/sysmon.xml",
 }
 
 var SysmonFolder string = "sysmon"
